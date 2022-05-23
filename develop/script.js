@@ -130,15 +130,27 @@ function saveEvent(){
   var newEvent4=textArea4.value;
   var newEvent5=textArea5.value;
 
-    localStorage.setItem('event', JSON.stringify(newEvent9));
-    localStorage.setItem('event', JSON.stringify(newEvent10));
-    localStorage.setItem('event', JSON.stringify(newEvent11));
-    localStorage.setItem('event', JSON.stringify(newEvent12));
-    localStorage.setItem('event', JSON.stringify(newEvent1));
-    localStorage.setItem('event', JSON.stringify(newEvent2));
-    localStorage.setItem('event', JSON.stringify(newEvent3));
-    localStorage.setItem('event', JSON.stringify(newEvent4));
-    localStorage.setItem('event', JSON.stringify(newEvent5));
+    localStorage.setItem('event9', JSON.stringify(newEvent9));
+    localStorage.setItem('event10', JSON.stringify(newEvent10));
+    localStorage.setItem('event11', JSON.stringify(newEvent11));
+    localStorage.setItem('event12', JSON.stringify(newEvent12));
+    localStorage.setItem('event1', JSON.stringify(newEvent1));
+    localStorage.setItem('event2', JSON.stringify(newEvent2));
+    localStorage.setItem('event3', JSON.stringify(newEvent3));
+    localStorage.setItem('event4', JSON.stringify(newEvent4));
+    localStorage.setItem('event5', JSON.stringify(newEvent5));
+
+    localStorage.getItem('event9');
+    localStorage.getItem('event10');
+    localStorage.getItem('event11');
+    localStorage.getItem('event12');
+    localStorage.getItem('event1');
+    localStorage.getItem('event2');
+    localStorage.getItem('event3');
+    localStorage.getItem('event4');
+    localStorage.getItem('event5');
+
+
 
   }
 

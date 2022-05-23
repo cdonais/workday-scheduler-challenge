@@ -1,7 +1,7 @@
 # workday-scheduler-challenge
 
 ## Purpose
-To build a workday scheduler that displays the current date, saves users event input, and color codes the hours to represent past, present, and future.
+To build a workday scheduler that displays the current date, saves user's event input, and color codes the hours to represent past, present, and future.
 
 ## Built With
 * HTML
@@ -11,5 +11,8 @@ To build a workday scheduler that displays the current date, saves users event i
 * Moment JS
 
 ## Website
+https://cdonais.github.io/workday-scheduler-challenge/
 
 ## Screenshot
+![demonstration of time color coded timeblocks](screenshot1.jpg)
+![test of local storage](screenshot2.jpg)

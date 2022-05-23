@@ -25,17 +25,13 @@ var time5=moment().set('hour',17).format("h A");
 
 
 
-console.log(currentDay);
-console.log(currentTime);
-console.log(time9);
-console.log(time1);
-
+//show today's date
 function showTodaysDate(){
     currentDay.innerHTML=(todaysDate);
 }
     
 
-     //if hour is current time set to present
+     //color code time blocks based on past, present, future
      if (currentTime > time9){
       $("#textArea9").addClass("future");
   }
@@ -123,8 +119,31 @@ else {
    $("#textArea5").addClass("future");
 }
 
+function saveEvent(){
+  var newEvent9=textArea9.value;
+  var newEvent10=textArea10.value;
+  var newEvent11=textArea11.value;
+  var newEvent12=textArea12.value;
+  var newEvent1=textArea1.value;
+  var newEvent2=textArea2.value;
+  var newEvent3=textArea3.value;
+  var newEvent4=textArea4.value;
+  var newEvent5=textArea5.value;
+
+    localStorage.setItem('event', JSON.stringify(newEvent9));
+    localStorage.setItem('event', JSON.stringify(newEvent10));
+    localStorage.setItem('event', JSON.stringify(newEvent11));
+    localStorage.setItem('event', JSON.stringify(newEvent12));
+    localStorage.setItem('event', JSON.stringify(newEvent1));
+    localStorage.setItem('event', JSON.stringify(newEvent2));
+    localStorage.setItem('event', JSON.stringify(newEvent3));
+    localStorage.setItem('event', JSON.stringify(newEvent4));
+    localStorage.setItem('event', JSON.stringify(newEvent5));
+
+  }
+
 
     
-
+saveButtton.addEventListener("click", saveEvent);
 showTodaysDate();
-//setTimeBlocks();
+saveEvent();
